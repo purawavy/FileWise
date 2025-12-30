@@ -1,3 +1,4 @@
+print ("Hello World! I am FileWise your Demogorgon from Stanger Things! I am A CLI tool for students to manage their files.")
 from scanner import scan_files
 from organizer import classify_file, build_new_name
 from preview import show_preview
