@@ -1,3 +1,4 @@
+print("CLI Activated.")
 print ("Hello World! I am FileWise your Demogorgon from Stanger Things! I am A CLI tool for students to manage their files.")
 from scanner import scan_files
 from organizer import classify_file, build_new_name
@@ -28,7 +29,7 @@ def main():
 
     confirm = input("Apply changes? (y/n): ").lower()
     if confirm != "y":
-        print("Operation cancelled.")
+        print("Operation Terminated.")
         return
 
     for old, new in preview_data:
@@ -36,7 +37,7 @@ def main():
         shutil.move(old, new)
         log_action(old, new)
 
-    print("Files organized successfully.")
+    print("Files organized. Congrats!")
 
 if __name__ == "__main__":
     main()
